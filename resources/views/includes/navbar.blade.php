@@ -13,11 +13,17 @@
             <div class="user-area dropdown float-right">
                 <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
+                    <p class="mr-3 mt-3"> Hallo! 👋 <b>{{ Auth::user()->name }}</b></p>
                     <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                 </a>
 
                 <div class="user-menu dropdown-menu">
-                    <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                    <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i
+                            class="fa fa-power -off"></i>Logout</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </div>
             </div>
 
