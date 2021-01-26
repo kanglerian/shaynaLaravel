@@ -1,7 +1,5 @@
 @extends('layouts.default')
-
 @section('content')
-
     <!-- Animated -->
     <div class="animated fadeIn">
         <!-- Widgets  -->
@@ -153,6 +151,4 @@
         <!-- /#add-category -->
     </div>
     <!-- .animated -->
-
-
 @endsection
