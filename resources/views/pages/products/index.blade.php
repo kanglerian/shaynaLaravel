@@ -37,11 +37,8 @@
                                                     <i class="fa fa-picture-o"></i></a> --}}
                                                 <a href="#" class="btn btn-info btn-sm">
                                                     <i class="fa fa-picture-o"></i></a>
-                                                {{-- <a
-                                                    href="{{ route('products.edit', $item->id) }}"
+                                                <a href="{{ route('products.edit', $item->id) }}"
                                                     class="btn btn-primary btn-sm">
-                                                    <i class="fa fa-pencil"></i></a> --}}
-                                                <a href="#" class="btn btn-primary btn-sm">
                                                     <i class="fa fa-pencil"></i></a>
                                                 <form action="{{ route('products.destroy', $item->id) }}" method="post"
                                                     class="d-inline">
